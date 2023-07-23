@@ -47,30 +47,6 @@ return require('packer').startup(function(use)
 
   use('simrat39/inlay-hints.nvim')
 
-  --[[
-  use({
-      "folke/trouble.nvim",
-      config = function()
-          require("trouble").setup {
-              icons = false,
-          }
-      end
-  })
-
-
-
-  use("eandrju/cellular-automaton.nvim")
-  use("laytan/cloak.nvim")
-
-  use {
-    'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' },
-    config = function() require('gitsigns').setup() end
-  }
-
-  use 'Yggdroot/indentLine'
-  use 'mhinz/vim-startify'
-  ]]
-
   use { "catppuccin/nvim", as = "catppuccin" }
 
 end)
